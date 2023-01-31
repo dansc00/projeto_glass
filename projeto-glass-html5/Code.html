@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>PYTHON</title>
+    <style>
+         body{
+            color: #069726;
+            font-size: 30px
+         }
+
+         h1{
+            color: green;
+            text-align: center;
+            font-size: 50px
+         }
+
+    </style>
+<body>
+    <h1>PYTHON</h1>
+    <code>
+    <pre>
+def vogal(x):
+    if x in 'AEIOU':
+        return True
+    else:
+        return False
+while True:
+    carac = ''
+    while len(carac) > 1 or len(carac) < 1:
+        carac = str(input('Digite uma letra qualquer: ').strip().upper())
+        if len(carac) > 1:
+            print('DIGITE SOMENTE UMA LETRA, TENTE NOVAMENTE.')
+        elif len(carac) < 1:
+            print('DIGITE PELO MENOS UMA LETRA, TENTE NOVAMENTE.')
+    if len(carac) == 1:
+        break
+print(f'{carac} é vogal? {vogal(carac)}')
+    </pre>
+    </code>
+</body>
+</head>
+</html>

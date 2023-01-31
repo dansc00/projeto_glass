@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TestandoJavaScript</title>
+    <script>
+        var cont = 0;
+        function mudaLampada(){
+            cont = (cont + 1);
+            if (cont % 2 == 0){
+                arquivo = '_imagens/lampada-apagada.jpg';
+            }
+            else{
+                arquivo = '_imagens/lampada-acesa.jpg';
+            }
+            document.getElementById('luz').src= arquivo;
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Testando JavaScript</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onclick="mudaLampada()"/>
+    <script>
+        document.write('Olá Mundo ');
+        document.write('Hoje é dia ' + Date());
+    </script>
+</body>
+</html>
